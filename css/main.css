@@ -157,7 +157,11 @@ section,
     
   }
 
-  main >#about {
+  main >#about,
+  main >#phases,
+  main >#get-started,
+  main >#tips,
+  main >#courses {
     padding: 0 .7em;
   }
   
