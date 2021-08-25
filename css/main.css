@@ -225,7 +225,7 @@ section,
   display: block;
   border: solid 1px #555;
   font-family: inherit;
-  font-size: 1.64em;
+  font-size: 1.55em;
   padding: .08em .3em .08em .3em;
   color: white;
   margin: 0 .4em;
@@ -255,10 +255,31 @@ nav.is-open > ul {
 }
 
 nav.is-open ul li a {
-  display: block;
+  display: inline-block;
   color: white; 
   text-decoration: none;
   padding: 1em 1.5em;
+}
+
+/*
+ <div id="upper">
+            <div class="links"></div>
+            <div class="copyright"></div>
+        </div>
+        <div id="lower"></div>
+*/
+footer{
+  justify-content: center;
+}
+footer > div#upper {
+  display: flex;
+  flex-direction: column;
+}
+
+div#upper > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
   @media all and (min-width : 900px) {
@@ -339,7 +360,15 @@ nav.is-open ul li a {
         margin: 10px 0;
     }
 
-   
-    
+    footer > div#upper {
+
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    footer > div#upper > .links {
+      margin-right: 25em;
+    }
     
   }
