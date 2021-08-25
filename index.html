@@ -18,7 +18,7 @@
             <img src="./images/pluralsight-mobile-logo.png" alt="pluralsight-logo" id="mobile-logo">
         </div>
         <input type="text" placeholder="How can we help you?" class="search-box">
-        <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+        <a href="#" class="menu" >
             <i class="fa fa-bars"></i>
           </a>
         
@@ -26,15 +26,15 @@
     <nav>
         <ul>
             <li><a href="#about">About this program</a></li>
-            <hr>
+            
             <li><a href="#phases">Phases and advancement criteria</a></li>
-            <hr>
+            
             <li><a href="#get-started">How to get started on Skills</a></li>
-            <hr>
+            
             <li><a href="#tips">Course learning tips</a></li>
-            <hr>
+            
             <li><a href="#courses">What courses do I have access to?</a></li>
-            <hr>
+            
         </ul>
     </nav>
     <main>
@@ -285,6 +285,20 @@
         </div>
         <div id="lower"></div>
     </footer>
+    <script>
+        let link = document.querySelector('.menu')
+        let nav = document.querySelector('nav')
+
+        link.addEventListener('click', toggleNav)
+
+        function toggleNav() {
+        if (nav.classList.contains('is-open')) {
+            nav.classList.remove('is-open')
+        } else {
+            nav.classList.add('is-open')
+        }
+        }
+    </script>
 </body>
 
 </html>
