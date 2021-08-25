@@ -45,7 +45,6 @@ section,
 
   h1, h2, h3, h4, h5, h6 {
     margin: 1em 0;
-    text-align: left;
   }
 
   h1 {
@@ -58,7 +57,7 @@ section,
     align-self: flex-start;
     width: 100%;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
     color: rgb(61, 60, 60);
     font-weight: 400;
     line-height: 1.7;
@@ -76,7 +75,7 @@ section,
 #mobile-logo {
     display: block;
     height: 2.2em;
-    margin: 0 .8em;
+    margin: 0 .5em;
   
   }
 
@@ -147,7 +146,8 @@ section,
   }
 
   main > #banner > img {
-   
+   object-fit: none;
+   object-position:left;
     width: 100%;
   }
 
@@ -206,6 +206,20 @@ section,
 .bold-text {
   font-weight: 700;
 }
+.ended {
+  color: red;
+  font-weight: 700;
+}
+
+.coming-up {
+  color: rgb(179, 179, 21);
+  font-weight: 700;
+}
+
+.active {
+  color: green;
+  font-weight: 700;
+}
 
   @media all and (min-width : 900px) {
     body {
@@ -236,7 +250,7 @@ section,
         display: block;
         object-fit: contain;
         height: 2.2em;
-        margin: 0 2em;
+        margin: 0 .5em;
       }
 
       .search-box {
