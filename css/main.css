@@ -221,6 +221,20 @@ section,
   font-weight: 700;
 }
 
+.menu {
+  display: block;
+  border: solid 1px #555;
+  font-family: inherit;
+  font-size: 1.64em;
+  padding: .08em .3em .08em .3em;
+  color: white;
+  
+  margin: 0 .4em;
+  
+  border-radius: 3px;
+  transition: all .3s ease;
+}
+
   @media all and (min-width : 900px) {
     body {
         display: grid;
@@ -255,6 +269,14 @@ section,
 
       .search-box {
         width: 30vw;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .menu.menu-bar {
+        display: none;
       }
 
       main > #banner > h2 {
