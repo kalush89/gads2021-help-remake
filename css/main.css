@@ -302,6 +302,7 @@ footer > div#upper {
 footer > div#upper > div.links  {
   color: #fff;
   font-size: 12px;
+  padding-bottom: .5em;
 }
 
 footer > div#upper > div.links a {
