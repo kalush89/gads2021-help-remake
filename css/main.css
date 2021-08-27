@@ -11,7 +11,7 @@ html {
 
 body {
     display: grid;
-    grid-template:min-content min-content min-content 20vw / 100vw;
+    grid-template:min-content min-content min-content min-content / 100vw;
     font-family: Lato,Arial,sans-serif;
     font-size: 18px;
     margin: 0;
@@ -43,8 +43,10 @@ section,
 
   footer {
     flex-direction: column;
+    width: 100%;
   }
 
+  
   main {
     display: grid;
     grid-template:repeat(6, min-content)/ 100%;
@@ -284,8 +286,42 @@ nav.is-open ul li a {
 
 nav ul {
   list-style: none;
-  line-height: 2.5;
+  line-height: 3;
 }
+
+footer > div#upper {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+ justify-content: center;
+  background: rgb(37, 36, 36);
+  color: white;
+  text-align: center;
+}
+
+footer > div#upper > div.links  {
+  color: #fff;
+  font-size: 12px;
+}
+
+footer > div#upper > div.links a {
+  color: white;
+  padding: 0 .5em;
+ 
+}
+
+footer > div#upper > div.copyright {
+  font-weight: lighter;
+  color: #b8b8b8;
+  font-size: 12px;
+  padding-left: 0;
+ }
+
+ footer > div#lower {
+  background: linear-gradient(to right, #f15b2a, #e80a89);
+  height: .5em;
+ }
+
 /*
 nav {
   position: absolute;
@@ -318,7 +354,7 @@ nav.is-open ul li a {
 
   @media all and (min-width : 900px) {
     body {
-        grid-template:min-content min-content 10vw / 1fr 2fr;
+        grid-template:min-content min-content min-content / 1fr 2fr;
       }
 
       header,
@@ -332,8 +368,21 @@ nav.is-open ul li a {
       }
 
       footer {
-         flex-direction: row;
+         flex-direction: column;
       }
+    
+      footer > div#upper {
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+      }
+
+      footer > div#upper > div.copyright {
+        font-weight: lighter;
+        color: #b8b8b8;
+        font-size: 12px;
+        
+       }
 
      
       section {
