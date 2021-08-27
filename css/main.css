@@ -134,7 +134,7 @@ section,
 #mobile-logo {
     display: block;
     height: 2.4em;
-    margin-left: 1.3em;
+    margin-left: .8em;
     margin-right: .5em;
   
   }
@@ -368,7 +368,7 @@ nav.is-open ul li a {
         display: block;
 
         height: 2.4em;
-        margin-left: 1.3em;
+        margin-left: .8em;
         margin-right: .5em;
       }
 
