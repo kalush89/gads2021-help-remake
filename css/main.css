@@ -133,8 +133,8 @@ section,
 
 #mobile-logo {
     display: block;
-    height: 2.4em;
-    margin-left: .8em;
+    height: 2.2em;
+    margin-left: .6em;
     margin-right: .5em;
   
   }
@@ -366,9 +366,8 @@ nav.is-open ul li a {
     
       div.logo>#desktop-logo {
         display: block;
-
-        height: 2.4em;
-        margin-left: .8em;
+        height: 2.2em;
+        margin-left: .6em;
         margin-right: .5em;
       }
 
